@@ -77,4 +77,4 @@ if __name__ == '__main__':
 	print("\nColoring of graph 2")
 	greedyColoring(g2, 5)
 
-# This code is contributed by mohit kumar 29
+
