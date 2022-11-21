@@ -4,11 +4,11 @@ class Item:
         self.weight = w
         
     
-def fractional_knapsack(W : int, arr : list()):
+def fractional_knapsack(W : int, arr : list(), n):
     #pass
     arr.sort(key = lambda x: (x.value / x.weight), reverse = True)
     ans = 0
-    for i in range(len(arr)):
+    for i in range(n):
         cur = arr[i]
         
         if cur.weight <= W:
@@ -30,7 +30,7 @@ if __name__ == "__main__":
     W = 50
     
     arr = [Item(70, 10), Item(100, 20), Item(120, 30)]
-    ans = fractional_knapsack(W, arr)
+    ans = fractional_knapsack(W, arr, len(arr))
     print(ans)
     
     
