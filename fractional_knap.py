@@ -8,7 +8,7 @@ def fractional_knapsack(W : int, arr : list()):
     #pass
     arr.sort(key = lambda x: (x.value / x.weight), reverse = True)
     ans = 0
-    for i in range(len(arr) + 1):
+    for i in range(len(arr)):
         cur = arr[i]
         
         if cur.weight <= W:
